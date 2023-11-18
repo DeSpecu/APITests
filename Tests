@@ -1,0 +1,9 @@
+curl --request GET --url https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n --header 'Authorization: Bearer KEY' //GET Playlists
+
+curl --request GET --url https://api.spotify.com/v1/audiobooks/7iHfbu1YPACw6oZPAFJtqe --header 'Authorization: Bearer KEY' //GET Audiobook
+
+curl --request POST --url https://api.spotify.com/v1/me/player/next --header 'Authorization: Bearer KEY' //POST Skip to Next song
+
+curl --request PUT --url 'https://api.spotify.com/v1/me/player/repeat?state=context' --header 'Authorization: Bearer KEY' //PUT Set repeat
+
+curl --request DELETE --url 'https://api.spotify.com/v1/me/audiobooks?ids=18yVqkdbdRvS24c0Ilj2ci%2C1HGw3J3NxZO1TP1BTtVhpZ%2C7iHfbu1YPACw6oZPAFJtqe' --header 'Authorization: Bearer KEY' //REMOVE saved audiobooks
