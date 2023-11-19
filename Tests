@@ -1,3 +1,16 @@
+//FastAPI
+curl -X GET localhost:8000/goals/{goal_id}?goals_id=1 -H 'accept:application/json' //GET Goal by ID
+
+curl -X GET localhost:8000/goals -H 'accept:application/json' //GET all Goals
+
+curl -X PUT localhost:8000/goals/1 -H 'accept:application/json' -H Content-Type:application/json -d {"id":0,"title":"string","due_date":"string","frequency":[0],"progress":0,"archived":false} //PUT goal
+
+curl -X 'DELETE' localhost:8000/goals/1 -H 'accept: application/json' //DELETE goal by ID
+
+curl -X 'POST' localhost:8000/goals -H 'accept: application/json' -H 'Content-Type: application/json' -d {"id":0,"title":"string","due_date":"string","frequency":[0],"progress":0,"archived": false} //POST goal
+
+//Spotify API
+
 curl --request GET --url https://api.spotify.com/v1/playlists/3cEYpjA9oz9GiPac4AsH4n --header 'Authorization: Bearer KEY' //GET Playlists
 
 curl --request GET --url https://api.spotify.com/v1/audiobooks/7iHfbu1YPACw6oZPAFJtqe --header 'Authorization: Bearer KEY' //GET Audiobook
